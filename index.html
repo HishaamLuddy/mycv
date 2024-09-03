@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(5392092.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: background-color 0.5s ease;
+            font-family: Arial, Helvetica, sans-serif;
+            color: azure;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            padding: 0 200px;
+        }
+
+        h2 {
+            margin: 25px; 
+            font-family: Arial, Helvetica, sans-serif;
+            color: azure;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            border-style: groove;
+            
+            border: none;
+            margin-left: auto; 
+        }
+
+        nav button {
+            width: auto;
+            height: auto;
+            background: none;
+            border: none;
+            font-size: medium;
+            margin: 0 5px; 
+        }
+
+        nav a {
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #cccccc;
+        }
+
+        .fixed-image {
+            position: fixed;
+            width: 10%;
+            height: 20%;
+            border-radius: 100%;
+            margin-top: 10%;
+            margin-left: 45%;
+        }
+
+        .p1 {
+            margin-top: 23%;
+            text-align: center;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .p2 {
+            text-align: center;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin: 0 45%;
+        }
+
+        .dropbtn {
+            background: none;
+            color: #ffffff;
+            font-size: medium;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(11, 40, 69);
+            width: 180px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #ffffff;
+            padding: 10px 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    
+        @media only screen and (max-width: 768px) {
+            header {
+                padding: 0 10px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav button {
+                margin: 5px 0;
+            }
+
+            .dropdown {
+                margin: 5px 0;
+            }
+
+            .fixed-image {
+                width: 20%;
+                height: 40%;
+                margin-top: 5%;
+                margin-left: 40%;
+            }
+
+            .p1, .p2 {
+                margin-top: 10%;
+                font-size: large;
+            }
+        }
+    </style>
+
+    <script>
+        
+        function loadPage(page) {
+            const pageContainer = document.getElementById('pageContainer');
+            pageContainer.style.opacity = 0;
+
+            setTimeout(() => {
+                window.location.href = page;
+            }, 1000);
+        }
+
+        function toggleDarkMode() {
+            const body = document.body;
+            const currentBackgroundColor = getComputedStyle(body).backgroundColor;
+
+            if (currentBackgroundColor === 'rgb(0, 0, 0)') {
+                body.style.backgroundColor = 'rgb(255, 255, 255)';
+            } else {
+                body.style.backgroundColor = 'rgb(0, 0, 0)';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h2>Hishaam's Portfolio</h2>
+        <nav>
+            <button type="button" name="button1"><a href="page 1.html">Home</a></button>
+            <button type="button" name="button4"><a href="page 3.html">Skills</a></button>
+            <button type="button" name="button2"><a href="page 2.html">Projects</a></button>
+            <button type="button" name="button4"><a href="page 4.html">Contact Info</a></button>
+        </nav>
+    </header>
+
+    <img src="H1.png" alt="Profile Image" class="fixed-image">
+    <div class="p1">
+        <p>Hi, I'm Hishaam Luddy</p>
+    </div>
+    <div class="p2">
+        <p>Junior Python Developer / Junior Software Developer / Web Developer</p>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">More About Me &#9660;</button>
+        <div class="dropdown-content">
+            <a href="#">
+                Name: Hishaam <br>
+                Surname: Luddy<br>
+                Title: Mr <br>
+                Age: 20 <br>
+                DOB: 12/12/2002<br>
+                Country: South Africa<br>
+                City: Cape Town<br>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

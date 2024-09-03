@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(sep009.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            padding: 0 200px; 
+        }
+
+        h2 {
+            margin: 25px; 
+            font-family: Arial, Helvetica, sans-serif;
+            color: azure;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            border-style: groove;
+            
+            border: none;
+            margin-left: auto; 
+        }
+
+        nav button {
+            width: auto;
+            height: auto;
+            background: none;
+            border: none;
+            font-size: medium;
+            margin: 0 5px; 
+        }
+
+        nav a {
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            font-size: medium;
+            text-decoration: none; 
+        }
+
+        nav a:hover {
+            text-decoration: underline; 
+            color: #cccccc;
+        }
+    
+    
+        .font{
+            font-family: Arial, Helvetica, sans-serif;
+            color: azure;
+            margin-left: 2%;
+        }
+        .fontandalign{
+            font-family: Arial, Helvetica, sans-serif;
+            color: azure;
+            margin-left: 55%;
+            margin-top: -27%;  
+        }
+
+    @media only screen and (max-width: 768px) {
+        header {
+            padding: 0 10px; 
+        }
+
+        h2 {
+            margin: 10px 0; 
+        }
+
+        nav {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        nav button {
+            margin: 5px 0;
+        }
+
+
+        .font, .fontandalign {
+            margin-left: 5%; 
+        }
+    }
+        
+     
+    </style>
+
+    <script>
+    function loadPage(page) {
+        const pageContainer = document.getElementById('pageContainer');
+        
+        pageContainer.style.opacity = 0;
+    
+        setTimeout(() => {
+            window.location.href = page;
+        }, 1000); 
+    }
+
+    function toggleDarkMode() {
+    const body = document.body;
+    const currentBackgroundColor = getComputedStyle(body).backgroundColor;
+
+    if (currentBackgroundColor === 'rgb(0, 0, 0)') {
+        body.style.backgroundColor = 'rgb(255, 255, 255)';
+    } else {
+        body.style.backgroundColor = 'rgb(0, 0, 0)';
+    }
+}
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <h2>Projects & Experience</h2>
+        <nav>
+            <button type="button" name="button1"><a href="index.html">Home</a></button>
+            <button type="button" name="button4"><a href="page 3.html">Skills</a></button>
+            <button type="button" name="button2"><a href="page 2.html">Projects</a></button>
+            <button type="button" name="button4"><a href="page 4.html">Contact Info</a></button>
+        </nav>
+    </header>
+    <br>
+    <br>
+
+    <div class="font">
+        <h3>Projects &#9660 </h3>
+        <h3>CTU Buddy</h3>
+       
+        <ul>
+        <li>Developed a website with a team, for students</li> <img src="pic1.png" style="position: fixed; z-index: -2;width:10%; height:20%; margin-left: 30.5%; margin-top: -3%; border-radius: 10%;"/>
+        <li>Interactive website</li>
+        <li>Users could uplaod and download files</li><img src="pic2.png" style="position: fixed; z-index: -2;width:10%; height:20%; margin-left: 40%; margin-top: 1.5%; border-radius: 10%;"/>
+        <li>Users could make use of the chat area</li>
+        <li>Users could find the campus location on the map that was added</li>
+    </ul>
+    </div>
+
+    <div class="font">
+        <h3>Groomers On The Go</h3>
+       
+        <ul>
+        <li>Developing a website for a pet grooming business</li><img src="pic4.png" style="position: fixed; z-index: -2;width:10%; height:20%; margin-left: 30.5%; margin-top:2%; border-radius: 10%;"/>
+        <li>Interactive website</li>
+        <li>Made up of 4 pages</li>
+        <li>Added all services rendered and business contact infromation </li>
+    </ul>
+    </div>
+
+        <div class="font">
+            <h3>Rock - Paper - Scissors</h3>
+           
+            <ul>
+            <li>A python programme </li>
+            <li>User VS Computer</li>
+        
+    </ul>
+    </div>
+
+    <div class="fontandalign">
+        <h3>Work Experience &#9660 </h3>
+        <h3>Fibre optic technician's assistant</h3>
+       
+        <ul>
+        <li>1 year</li>
+        <li>Setting up routers</li>
+        <li>Installation of fibre cables</li>
+    </ul>
+    
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
